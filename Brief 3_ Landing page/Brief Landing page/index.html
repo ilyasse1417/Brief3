@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200;1,400&display=swap"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/c7a60e43cd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ======================== Navbar===================-->
+    <nav class="navbar">
+      <img src="pic/logo2.png" alt="logo">
+      <h3 class="logo">Insolitours</h3>
+      <ul class="links">
+        <li><a href="#Book_now">Réservez</a></li>
+        <li><a href="#thefirstsection">Offres</a></li>
+        <li><a href="#thethirdsection">Propriétés</a></li>
+        <li><a href="#inscription">Inscription</a></li>
+      </ul>
+    </nav>
+     <!-- ======================== Menu button===================-->
+    <img src="pic/muu.png" alt="icon" class="menubtn">
+     <!-- ======================== Header ==================-->
+    <header>
+      <div class="content">
+        <div class="content2">
+          <h1>
+            Économisez jusqu'à  <span class="sp1">25%</span> <br>
+            lors de votre premier voyage<br><span class="sp2"> Inscrivez vous maintenant!</span>
+          </h1>
+          <p>
+            Profitez de nos meilleures offres!
+          </p>
+           <!-- ======================== button ===================-->
+          <div class="wrapper" id="Book_now" >
+            <a href="#Book_now"><span>Réservez</span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+     <!-- ======================== script For navbar ===================-->
+    <script>
+      const menubtn = document.querySelector(".menubtn");
+      const links = document.querySelector(".links");
+      menubtn.addEventListener("click", () => {
+        links.classList.toggle("mobilemenu");
+      });
+    </script>
+     <!-- ========================  Search bar ===================-->
+    <div class="searchbar" >
+      <input
+        type="email"
+        class="form-control"
+        placeholder="Votre destination">
+
+      <input
+        type="date"
+        class="start"
+        name="trip-start"
+        value="2018-07-22"
+        min="2018-01-01"
+        max="2018-12-31">
+
+      <input
+        type="date"
+        class="start"
+        name="trip-start"
+        value="2018-07-22"
+        min="2018-01-01"
+        max="2018-12-31">
+      <input
+        type="email"
+        class="form-control"
+        placeholder="Nombre de personnes">
+        <button class="form-control" id="sear" style="cursor: pointer;">Chercher</button>
+    </div>
+     <!-- ======================== First section offers ===================-->
+    <section id="thefirstsection">
+      <h3>Offres</h3>
+       <!-- ====== FIrst image======-->
+      <div class="offers">
+        <div class="ss1">
+          <div id="leftimage" class="image">
+            <img src="pic/image2.jpg" alt="cul2">
+            <div class="image__overlay">
+              <div class="titlee">Économisez 15 % avec les offres d'évasion tardives</div>
+            </div>
+          </div>
+        </div>
+        <div id="rightimage" class="image">
+          <img src="pic/gg22.jpg" alt="cul2">
+          <div class="image__overlay">
+            <div class="titlee">Évadez-vous un moment</div>
+          </div>
+        </div>
+      </div>
+    </section>
+       <!-- ========================  Second section ===================-->
+    <div id="theseconsection" >
+    <section class="4images">
+      <h4>Ces destinations populaires ont beaucoup à offrir:</h4>
+       <!-- ===  the four images=====-->
+      <div class="offers2">
+        <div class="firstone">
+          <div  class="image">
+            <img class="wing" src="pic/paris.jpg" alt="cul2">
+            <div class="image__overlay">
+              <div class="titlee">Paris</div>
+              <p class="description">À partir de 97€/Nuit<br>4.9</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dis">
+          <div class="firstone1">
+            <div class="image2">
+              <img class="middle" src="pic/maroc.jpg" alt="cul2">
+              <div class="image__overlay2">
+                <div class="titlee">France</div>
+                <p class="description">À partir de 23€/Nuit<br>4.8</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="firstone1">
+            <div class="image2">
+              <img class="middle" src="pic/egypt.jpg" alt="cul2">
+              <div class="image__overlay2">
+                <div class="titlee">Égypte</div>
+                <p class="description">À partir de 15€/Nuit<br>4.6</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="firstone">
+          <div  class="image">
+            <img class="wing" src="pic/rome.jpg" alt="cul2">
+            <div class="image__overlay">
+              <div class="titlee">Italie</div>
+              <p class="description">À partir de 85€/Nuit<br>4.8</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="prop">Propriétés</h3>
+    </section>
+  </div>
+     <!-- ==================== The third section slide ===================-->
+    <div id="thethirdsection" class="sliders">
+      <div class="slider" id="propr_ieties">
+        <div class="images">
+          <input type="radio" name="slide" id="img10" checked>
+          <input type="radio" name="slide" id="img20">
+          <input type="radio" name="slide" id="img30">
+          <input type="radio" name="slide" id="img40">
+
+          <img src="pic/pic10.jpg" class="m1" alt="appartemet1">
+          <img src="pic/pic20.jpg" class="m2" alt="appartemet2">
+          <img src="pic/pic30.jpg" class="m3" alt="appartemet3">
+          <img src="pic/pic50.jpg" class="m4" alt="appartemet4">
+        </div>
+        <div class="dots">
+          <label for="img10"></label>
+          <label for="img20"></label>
+          <label for="img30"></label>
+          <label for="img40"></label>
+        </div>
+      </div>
+      <div class="text">
+        <p>
+          Hôtel : Établissement commercial qui met à la disposition<br> d'une clientèle itinérante des chambres meublées pour un prix journalier<br><br>
+          Maison : Bâtiment construit pour servir d'habitation aux personnes <br><br>
+          Appartement : Ensemble de pièces affectées à un usage particulier.<br>
+          C'est aussi une partie d'une maison, d'un immeuble composée de plusieurs<br> pièces qui servent d'habitation.
+
+        </p>
+      </div>
+    </div>
+     <!-- ======================== the fourth section email ===================-->
+    <section class="contact" id="inscription">
+      <h3>Inscrivez-vous</h3>
+      <h4 class="lastp">Gagnez du temps, économisez de l'argent !</h4>
+      <p>Inscrivez-vous et nous vous enverrons les meilleures offres</p>
+      <div class="sign">
+        <input type="email" id="email2" placeholder="Type-Email" name="email">
+        <div id="secondbtn" class="wrapper">
+          <a href="#"><span>Envoyer</span></a>
+        </div>
+      </div>
+    </section>
+     <!-- ======================== the fifth section footer ===================-->
+    <div class="footer">
+      <div class="iconss">
+        <a href=""><i class="fa-brands fa-twitter"></i>@Insolitours</a>
+        <a href=""><i class="fa-brands fa-facebook"></i>Insolitours</a>
+        <a href=""><i class="fa-brands fa-instagram"></i>@Insolitours</a>
+      </div>
+      <div class="iconss">
+        <p><i class="fa-solid fa-phone"></i>+33 64 21 28 20</p>
+        <p><i class="fa-solid fa-phone"></i>+33 52 46 21 22</p>
+        <p><i class="fa-regular fa-envelope"></i>info@Insolitours.com</p>
+      </div>
+      <div class="adress">
+        <h4>
+          Rue Chacal Le Blanc<br>
+          Numéro 53
+        </h4>
+        <h4 style="font-weight: 200">
+          Adnan Ettamri<br>
+          Valence
+        </h4>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © 1996–2022 Insolitours.com™. Tous les droits sont réservés.</p>
+    </div>
+  </body>
+</html>
